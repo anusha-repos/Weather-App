@@ -1,5 +1,3 @@
-const apiKey = "YOUR_ACTUAL_API_KEY";
-
 async function getWeather() {
 
     const city = document.getElementById("city").value.trim();
@@ -9,8 +7,7 @@ async function getWeather() {
         return;
     }
 
-   const url =
-                `http://localhost:5000/weather?city=${city}`;
+    const url = `/api/weather?city=${city}`;
 
     try {
 
